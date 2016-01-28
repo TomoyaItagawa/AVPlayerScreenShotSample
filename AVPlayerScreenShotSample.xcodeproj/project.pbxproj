@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9AA24531C58C047007C1642 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AA24521C58C047007C1642 /* UIViewExtension.swift */; };
+		D9AA24571C59ADC0007C1642 /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AA24561C59ADC0007C1642 /* AVPlayerView.swift */; };
+		D9AA24591C59B2AF007C1642 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AA24581C59B2AF007C1642 /* MovieViewController.swift */; };
+		D9AA245B1C59B2C7007C1642 /* Movie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9AA245A1C59B2C7007C1642 /* Movie.storyboard */; };
+		D9AA245F1C5A0046007C1642 /* freebies_032_mac.mov in Resources */ = {isa = PBXBuildFile; fileRef = D9AA245E1C5A0046007C1642 /* freebies_032_mac.mov */; };
 		D9DC96531C58A23F0083592E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DC96521C58A23F0083592E /* AppDelegate.swift */; };
 		D9DC96551C58A23F0083592E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DC96541C58A23F0083592E /* ViewController.swift */; };
 		D9DC96581C58A23F0083592E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9DC96561C58A23F0083592E /* Main.storyboard */; };
@@ -34,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D9AA24521C58C047007C1642 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		D9AA24561C59ADC0007C1642 /* AVPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
+		D9AA24581C59B2AF007C1642 /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		D9AA245A1C59B2C7007C1642 /* Movie.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Movie.storyboard; sourceTree = "<group>"; };
+		D9AA245E1C5A0046007C1642 /* freebies_032_mac.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = freebies_032_mac.mov; sourceTree = "<group>"; };
 		D9DC964F1C58A23F0083592E /* AVPlayerScreenShotSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVPlayerScreenShotSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9DC96521C58A23F0083592E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9DC96541C58A23F0083592E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,12 +107,17 @@
 		D9DC96511C58A23F0083592E /* AVPlayerScreenShotSample */ = {
 			isa = PBXGroup;
 			children = (
+				D9AA245E1C5A0046007C1642 /* freebies_032_mac.mov */,
 				D9DC96521C58A23F0083592E /* AppDelegate.swift */,
 				D9DC96541C58A23F0083592E /* ViewController.swift */,
 				D9DC96561C58A23F0083592E /* Main.storyboard */,
 				D9DC96591C58A23F0083592E /* Assets.xcassets */,
 				D9DC965B1C58A23F0083592E /* LaunchScreen.storyboard */,
 				D9DC965E1C58A23F0083592E /* Info.plist */,
+				D9AA24521C58C047007C1642 /* UIViewExtension.swift */,
+				D9AA24561C59ADC0007C1642 /* AVPlayerView.swift */,
+				D9AA24581C59B2AF007C1642 /* MovieViewController.swift */,
+				D9AA245A1C59B2C7007C1642 /* Movie.storyboard */,
 			);
 			path = AVPlayerScreenShotSample;
 			sourceTree = "<group>";
@@ -232,6 +247,8 @@
 				D9DC965D1C58A23F0083592E /* LaunchScreen.storyboard in Resources */,
 				D9DC965A1C58A23F0083592E /* Assets.xcassets in Resources */,
 				D9DC96581C58A23F0083592E /* Main.storyboard in Resources */,
+				D9AA245B1C59B2C7007C1642 /* Movie.storyboard in Resources */,
+				D9AA245F1C5A0046007C1642 /* freebies_032_mac.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9AA24571C59ADC0007C1642 /* AVPlayerView.swift in Sources */,
+				D9AA24591C59B2AF007C1642 /* MovieViewController.swift in Sources */,
+				D9AA24531C58C047007C1642 /* UIViewExtension.swift in Sources */,
 				D9DC96551C58A23F0083592E /* ViewController.swift in Sources */,
 				D9DC96531C58A23F0083592E /* AppDelegate.swift in Sources */,
 			);
@@ -348,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -386,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -398,6 +418,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AVPlayerScreenShotSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gawawa124.AVPlayerScreenShotSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AVPlayerScreenShotSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gawawa124.AVPlayerScreenShotSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -482,6 +504,7 @@
 				D9DC96791C58A23F0083592E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9DC967A1C58A23F0083592E /* Build configuration list for PBXNativeTarget "AVPlayerScreenShotSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +513,7 @@
 				D9DC967C1C58A23F0083592E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9DC967D1C58A23F0083592E /* Build configuration list for PBXNativeTarget "AVPlayerScreenShotSampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +522,7 @@
 				D9DC967F1C58A23F0083592E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

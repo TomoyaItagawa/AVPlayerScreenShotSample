@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="asA-iD-pOY">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Movie View Controller-->
+        <scene sceneID="7WY-6c-YxR">
+            <objects>
+                <viewController id="asA-iD-pOY" customClass="MovieViewController" customModule="AVPlayerScreenShotSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DCs-bZ-0D3"/>
+                        <viewControllerLayoutGuide type="bottom" id="1fv-TR-TGk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QYv-ZP-58m">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NHn-BR-GvD">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26D-8T-AQl">
+                                <rect key="frame" x="232" y="472" width="135" height="30"/>
+                                <state key="normal" title="ScreenShot(Failure)"/>
+                                <connections>
+                                    <action selector="failureButtonTapped:" destination="asA-iD-pOY" eventType="touchUpInside" id="pxJ-hx-xe9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRX-XL-QgO">
+                                <rect key="frame" x="226" y="516" width="148" height="30"/>
+                                <state key="normal" title="ScreenShot(Success)"/>
+                                <connections>
+                                    <action selector="successButtonTapped:" destination="asA-iD-pOY" eventType="touchUpInside" id="gl9-Y4-BSU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NHn-BR-GvD" secondAttribute="trailing" id="AMY-j8-GxF"/>
+                            <constraint firstItem="26D-8T-AQl" firstAttribute="centerX" secondItem="QYv-ZP-58m" secondAttribute="centerX" id="LWN-dV-vXl"/>
+                            <constraint firstItem="1fv-TR-TGk" firstAttribute="top" secondItem="NHn-BR-GvD" secondAttribute="bottom" id="OQW-pT-YNI"/>
+                            <constraint firstItem="NHn-BR-GvD" firstAttribute="leading" secondItem="QYv-ZP-58m" secondAttribute="leading" id="QRM-h1-B4J"/>
+                            <constraint firstItem="1fv-TR-TGk" firstAttribute="top" secondItem="NRX-XL-QgO" secondAttribute="bottom" constant="54" id="R4t-GE-ni3"/>
+                            <constraint firstItem="1fv-TR-TGk" firstAttribute="top" secondItem="26D-8T-AQl" secondAttribute="bottom" constant="98" id="a5P-Gz-VS0"/>
+                            <constraint firstItem="NRX-XL-QgO" firstAttribute="centerX" secondItem="QYv-ZP-58m" secondAttribute="centerX" id="aEu-yB-kqV"/>
+                            <constraint firstItem="NHn-BR-GvD" firstAttribute="top" secondItem="DCs-bZ-0D3" secondAttribute="bottom" constant="-20" id="zSN-Pg-IMZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="NHn-BR-GvD" id="QXG-4c-tC9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFp-mu-nFz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="528" y="-83"/>
+        </scene>
+    </scenes>
+</document>
