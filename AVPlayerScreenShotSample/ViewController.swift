@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
     @IBAction func screenshotButtonTapped(sender: AnyObject) {
         if let image = view.imageFromView() {
-            UIImageWriteToSavedPhotosAlbum(image, self, "image:didFinishSavingWithError:contextInfo:", nil)
+            UIImageWriteToSavedPhotosAlbum(image, self, #selector(self.image(_:didFinishSavingWithError:contextInfo:)), nil)
         }
     }
     

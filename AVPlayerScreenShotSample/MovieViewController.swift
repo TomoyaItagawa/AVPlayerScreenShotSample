@@ -36,7 +36,7 @@ class MovieViewController: UIViewController, AVPlayerItemOutputPullDelegate, AVC
         layer.player = videoPlayer
         self.view.layer.addSublayer(layer)
         
-        displayLink = CADisplayLink(target: self, selector: "displayLinkCallback:")
+        displayLink = CADisplayLink(target: self, selector: #selector(self.displayLinkCallback(_:)))
         displayLink.addToRunLoop(NSRunLoop.currentRunLoop(), forMode: NSDefaultRunLoopMode)
         displayLink.paused = true
         
@@ -51,7 +51,7 @@ class MovieViewController: UIViewController, AVPlayerItemOutputPullDelegate, AVC
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "playerItemDidReachEnd:", name: AVPlayerItemDidPlayToEndTimeNotification, object: playerItem)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.playerItemDidReachEnd(_:)), name: AVPlayerItemDidPlayToEndTimeNotification, object: playerItem)
     }
 
     override func didReceiveMemoryWarning() {
@@ -92,13 +92,13 @@ class MovieViewController: UIViewController, AVPlayerItemOutputPullDelegate, AVC
     
     @IBAction func failureButtonTapped(sender: AnyObject) {
         if let image = videoPlayerView.imageFromView() {
-            UIImageWriteToSavedPhotosAlbum(image, self, "image:didFinishSavingWithError:contextInfo:", nil)
+            UIImageWriteToSavedPhotosAlbum(image, self, #selector(self.image(_:didFinishSavingWithError:contextInfo:)), nil)
         }
     }
     
     @IBAction func successButtonTapped(sender: AnyObject) {
         if let image = backgroundImageView.image {
-            UIImageWriteToSavedPhotosAlbum(image, self, "image:didFinishSavingWithError:contextInfo:", nil)
+            UIImageWriteToSavedPhotosAlbum(image, self, #selector(self.image(_:didFinishSavingWithError:contextInfo:)), nil)
         }
     }
     
